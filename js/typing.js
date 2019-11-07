@@ -1,7 +1,7 @@
 // Header
 
 var typed = new Typed('.typing', {
-    strings: ["UX/UX Designer", "Web Developer", "Freelancer"],
+    strings: ["Backend developer", "Web Developer", "Freelancer", "Full-stack developer"],
     loop: true,
     typeSpeed: 40,
     backSpeed: 40,
@@ -12,7 +12,7 @@ var typed = new Typed('.typing', {
 //About Me
 
 var typed = new Typed('.about_typing', {
-    strings: ["UX/UX Designer", "Web Developer", "Freelancer"],
+    strings: ["Backend developer", "Web Developer", "Freelancer", "Full-stack developer"],
     loop: true,
     typeSpeed: 40,
     backSpeed: 40,
