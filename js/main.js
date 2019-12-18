@@ -241,7 +241,7 @@ $(document).ready(function() {
         var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "sendMail.php", //Change
+			url: "https://send-email-api.herokuapp.com/send", //Change
             data: th.serialize(),
             beforeSend: function(){
                 $("#btn_submit").prop("disabled", true);

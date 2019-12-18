@@ -21,6 +21,7 @@
     <script src="https://kit.fontawesome.com/a60e455f2f.js"></script>
     <!-- popup css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
 
@@ -47,7 +48,7 @@
             </div>
             <div class="Sent-title">
                 <span>Your message was sent successfully</span>
-                <p>Our team will respond to you in free time, Thank you</p>
+                <p>Patrick will respond to you, Thank you</p>
             </div>
         </div>
     </div>
@@ -73,9 +74,9 @@
             <div class="mobMenu">
                 <a href="#Home">Home</a>
                 <a href="#about__content">About</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#testimonial">Testimonials</a>
                 <!-- <a href="#services">Services</a> -->
-                <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </div> 
         </div>
@@ -101,9 +102,9 @@
             <ul> <!-- Here is menu -->
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about__content">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#testimonial">Testimonials</a></li>
                 <!-- <li><a href="#services">Services</a></li> -->
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -442,7 +443,7 @@
                             <img src="images/work/bg-2.jpg" alt="work">
                             <div class="item-overlay"></div>
                             <div class="item_title">
-                                <h6>Application</h6>
+                                <h6>Unclebob</h6>
                                 <a  href="images/work/bg-2.jpg"><i class="fas fa-search"></i></a>
                             </div>
                         </div>
@@ -452,7 +453,7 @@
                             <img src="images/work/bg-1.jpg" alt="work">
                             <div class="item-overlay"></div>
                             <div class="item_title">
-                                <h6>Web design</h6>
+                                <h6>Easy Dial</h6>
                                 <a href="images/work/bg-1.jpg"><i class="fas fa-search"></i></a>
                             </div>
                         </div>
@@ -462,7 +463,7 @@
                             <img src="images/work/bg-3.jpg" alt="work">
                             <div class="item-overlay"></div>
                             <div class="item_title">
-                                <h6>Application</h6>
+                                <h6>Authors haven</h6>
                                 <a href="images/work/bg-3.jpg"><i class="fas fa-search"></i></a>
                             </div>
                             </div>
@@ -475,13 +476,6 @@
             <div class="feedback_content">
                 <div class="feedback_container" id='testimonial'>
                     <div class="owl-carousel owl-theme" id="owl-carousel">
-                        <!-- <div>
-                            <figure>
-                                <img src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400" alt="user">
-                                <div class="name">Shyaka</div>
-                                <div class="comment">Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe asperiores nisi facere ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum autem? Veritatis fuga quasi sunt tenetur. Expedita id eaque incidunt beatae nesciunt! In similique exercitationem tempore excepturi placeat Nostrum ducimus dicta temporibus quas!</div> 
-                            </figure>
-                        </div> -->
                         <div>
                             <figure>
                                 <img src="https://lh3.googleusercontent.com/JUjzH3zd5GiExe5edjQN_V6HgvXxXAu5GJxEeASeHO_c3_PCFBZtZXcZh1mJ6VKNTtyDlrNi9QMIQ4BN04WfqTeIN5v4LB4ASKRU8pWFQIlLNqyLhnASA7aLjKhjEjigWPrLBjdRPA=w2400" alt="user">
@@ -491,6 +485,13 @@
                                     <br/>
                                     Co-founder <a href="http://www.araknerd.com/" target="_blank">ARAKNERD</a>
                                 </div>
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400" alt="user">
+                                <div class="name">Shyaka</div>
+                                <div class="comment">Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe asperiores nisi facere ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum autem? Veritatis fuga quasi sunt tenetur. Expedita id eaque incidunt beatae nesciunt! In similique exercitationem tempore excepturi placeat Nostrum ducimus dicta temporibus quas!</div> 
                             </figure>
                         </div>
                         <!-- <div>
@@ -528,23 +529,22 @@
                         </div>
                     </div>
                     <div class="contact-form">
-                        <form class="gform" name="MyForm" method="POST" action="https://script.google.com/macros/s/AKfycbxLxgwuScS-08oGQefJT4wmMq60bQ48EOSlJ_M2Jg/exec">
+                        <form class="gform">
                             <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="Site Name"> <!--Here is your site name-->
-                            <input type="hidden" name="admin_email" value="yourEmail@gmail.com"> <!--Here is your email-->
-                            <input type="hidden" name="form_subject" value="Form">
+                            <input type="hidden" name="subject" value="Portfolio Visitor"> <!--Here is your site name-->
+                            <input type="hidden" name="toEmail" value="dr.kimanjepatrick@gmail.com"> <!--Here is your email-->
                             <!-- /Hidden Required Fields -->
                             <div class="form-name">
                                 <input type="text" id="name" name="name" placeholder="Enter your name">
                             </div>
                             <div class="form-email">
-                                <input type="email" id="email" name="email" placeholder="Enter your email">
+                                <input type="email" id="fromEmail" name="fromEmail" placeholder="Enter your email">
                             </div>
                             <div class="form-textarea">
-                                <textarea name="message" id="text_comment" placeholder="How can I help you?"></textarea>
+                                <textarea name="body" id="body" placeholder="How can I help you?"></textarea>
                             </div>
                             <div class="btn__send">
-                                <button type="submit" id="btn_submit" name="done"><span>Send</span></button>
+                                <button type="submit" id="btn_submit"><span>Send</span></button>
                             </div>
                         </form>
                         <div id="winError"></div>
