@@ -1,310 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from hibix.template.advanceup.com.ua/Demo/Dark/04_Dark_Parallax/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Oct 2019 16:04:34 GMT -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Mirrored from hibix.template.advanceup.com.ua/Demo/Dark/04_Dark_Parallax/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Oct 2019 16:04:34 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hibix</title>
     <!-- favicon -->
-    <link rel="icon" href="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400">
+    <link
+      rel="icon"
+      href="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400"
+    />
     <!-- main css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
     <!-- OwlCarousel Css -->
-    <link rel="stylesheet" href="css/OwlCarousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/OwlCarousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/a60e455f2f.js"></script>
     <!-- popup css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- PRELOADER -->
     <div class="loader_bg">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
     <!-- /PRELOADER -->
 
     <!-- SCROLL TOP BUTTON -->
     <div class="scrollTop">
-        <a href="#Home">
-            <i class="fas fa-angle-up"></i>
-        </a>
+      <a href="#Home">
+        <i class="fas fa-angle-up"></i>
+      </a>
     </div>
     <!-- /SCROLL TOP BUTTON -->
 
     <!-- CONTACT POPUP -->
     <div id="MessageSent" class="MessageSent">
-        <button id="SentClose"><i class="fas fa-times"></i></button>
-        <div class="Sent_inner">
-            <div class="Sent-icon">
-                <i class="far fa-envelope"></i>
-            </div>
-            <div class="Sent-title">
-                <span>Your message was sent successfully</span>
-                <p>Patrick will respond to you, Thank you</p>
-            </div>
+      <button id="SentClose"><i class="fas fa-times"></i></button>
+      <div class="Sent_inner">
+        <div class="Sent-icon">
+          <i class="far fa-envelope"></i>
         </div>
+        <div class="Sent-title">
+          <span>Your message was sent successfully</span>
+          <p>Patrick will respond to you, Thank you</p>
+        </div>
+      </div>
     </div>
     <!-- /CONTACT POPUP -->
 
     <!-- MOBILE MENU -->
     <div class="mobile_menu">
-        <div class="mob_menu_container">
-            <div class="mob_menu_logo">
-                <a href="#Home">
-                    <img src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400" alt="Hibix Logo"><!-- Here is mobile logo -->
-                </a> 
-            </div>
-            <div class="burger_nav">
-                <div id="btn_nav" class="btn_nav">
-                    <span class="btn_nav_lines"></span>
-                </div>
-            </div>
+      <div class="mob_menu_container">
+        <div class="mob_menu_logo">
+          <a href="#Home">
+            <img
+              src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400"
+              alt="Hibix Logo"
+            /><!-- Here is mobile logo -->
+          </a>
         </div>
+        <div class="burger_nav">
+          <div id="btn_nav" class="btn_nav">
+            <span class="btn_nav_lines"></span>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="mob_nav" class="mob_nav">
-        <div class="nav"> <!-- Here is mobile menu -->
-            <div class="mobMenu">
-                <a href="#Home">Home</a>
-                <a href="#about__content">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#testimonial">Testimonials</a>
-                <!-- <a href="#services">Services</a> -->
-                <a href="#contact">Contact</a>
-            </div> 
+      <div class="nav">
+        <!-- Here is mobile menu -->
+        <div class="mobMenu">
+          <a href="#Home">Home</a>
+          <a href="#about__content">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#testimonial">Testimonials</a>
+          <!-- <a href="#services">Services</a> -->
+          <a href="#contact">Contact</a>
         </div>
-        <div class="social"><!-- Here is your social link. Just change href value to your link path. -->
-            <a title="facebook" href="https://www.facebook.com/dr.kimpatrick" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a title="twitter" href="https://twitter.com/DKimpatrick" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a title="linkedin" href="https://www.linkedin.com/in/drkimpatrick/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a title="instagram" href="https://www.instagram.com/dr.kimpatrick/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a title="github" href="https://github.com/DrKimpatrick" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
+      </div>
+      <div class="social">
+        <!-- Here is your social link. Just change href value to your link path. -->
+        <a
+          title="facebook"
+          href="https://www.facebook.com/dr.kimpatrick"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          title="twitter"
+          href="https://twitter.com/DKimpatrick"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          title="linkedin"
+          href="https://www.linkedin.com/in/drkimpatrick/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          title="instagram"
+          href="https://www.instagram.com/dr.kimpatrick/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a title="github" href="https://github.com/DrKimpatrick" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
     </div>
     <!-- /MOBILE MENU -->
 
     <!-- CONTENT -->
     <!-- LEFTPART -->
     <div class="menu" id="Menu">
-        <div class="logo" id="logo">
-            <a href="index.html">
-                <img src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400" alt="logo" style="border-radius:50%;"> <!-- Here is logo -->
-            </a>
-        </div>
-        <div class="nav" id="nav">
-            <ul> <!-- Here is menu -->
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#about__content">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonial">Testimonials</a></li>
-                <!-- <li><a href="#services">Services</a></li> -->
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="social" id="social"><!-- Here is your social link. Just change href value to your link path. -->
-            <a title="facebook" href="https://www.facebook.com/dr.kimpatrick" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a title="twitter" href="https://twitter.com/DKimpatrick" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a title="linkedin" href="https://www.linkedin.com/in/drkimpatrick/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a title="instagram" href="https://www.instagram.com/dr.kimpatrick/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a title="github" href="https://github.com/DrKimpatrick" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="close__menu" id="close_menu">
-            <i class="fas fa-chevron-left"></i>
-        </div>
+      <div class="logo" id="logo">
+        <a href="index.html">
+          <img
+            src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400"
+            alt="logo"
+            style="border-radius:50%;"
+          />
+          <!-- Here is logo -->
+        </a>
+      </div>
+      <div class="nav" id="nav">
+        <ul>
+          <!-- Here is menu -->
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about__content">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonial">Testimonials</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="social" id="social">
+        <!-- Here is your social link. Just change href value to your link path. -->
+        <a
+          title="facebook"
+          href="https://www.facebook.com/dr.kimpatrick"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          title="twitter"
+          href="https://twitter.com/DKimpatrick"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          title="linkedin"
+          href="https://www.linkedin.com/in/drkimpatrick/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          title="instagram"
+          href="https://www.instagram.com/dr.kimpatrick/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a title="github" href="https://github.com/DrKimpatrick" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <div class="close__menu" id="close_menu">
+        <i class="fas fa-chevron-left"></i>
+      </div>
     </div>
     <!-- /LEFTPART -->
 
     <!-- RIGHTPART -->
     <div class="content" id="content">
+      <!-- HEADER -->
+      <header class="header" id="Home">
+        <div class="header__content" id="header__content">
+          <div class="header__title">
+            <h1>Portfolio</h1>
+            <h2>Hello I'm <span class="typing"></span></h2>
+          </div>
+          <div class="Down__btn">
+            <a href="#about__content">
+              <i class="fas fa-angle-double-down"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- /HEADER -->
 
-        <!-- HEADER -->
-        <header class="header" id="Home">  
-            <div class="header__content" id="header__content">
-                <div class="header__title">
-                    <h1>Portfolio</h1>
-                    <h2>Hello I'm <span class="typing"></span></h2>
-                </div>
-                <div class="Down__btn">
-                    <a href="#about__content">
-                        <i class="fas fa-angle-double-down"></i>
-                    </a>
-                </div>
+      <section class="Section">
+        <!-- ABOUT -->
+        <div class="about__content" id="about__content">
+          <div class="about__title">
+            <h3>About me</h3>
+            <span>Main informations about me</span>
+          </div>
+          <div class="info__about__me">
+            <div class="info_photo">
+              <img
+                class="info_photo_item"
+                src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400"
+                alt="MyPhoto"
+              />
+              <!-- <img class="info_photo_item" src="https://lh3.googleusercontent.com/AeFQMleMQtQfMgvY53x05NPRFT_Li7c_t1xhwwRVUmneKfcN2yVBpK5JgXSyGiPZ_CnHaYMaj1ejOTeVbDz4zxg9_Cpqtvf54gOwKQe6jt4zG4DqcRv6NxAmbYfhxEKSdXNdafYHsw=w3000" alt="MyPhoto"> Here is your photo -->
             </div>
-        </header>
-        <!-- /HEADER -->
-
-        <section class="Section">
-
-            <!-- ABOUT -->
-            <div class="about__content" id="about__content">
-                <div class="about__title">
-                    <h3>About me</h3>
-                    <span>Main informations about me</span>
-                </div>
-                <div class="info__about__me">
-                    <div class="info_photo">
-                        <img class="info_photo_item" src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400" alt="MyPhoto">
-                        <!-- <img class="info_photo_item" src="https://lh3.googleusercontent.com/AeFQMleMQtQfMgvY53x05NPRFT_Li7c_t1xhwwRVUmneKfcN2yVBpK5JgXSyGiPZ_CnHaYMaj1ejOTeVbDz4zxg9_Cpqtvf54gOwKQe6jt4zG4DqcRv6NxAmbYfhxEKSdXNdafYHsw=w3000" alt="MyPhoto"> Here is your photo -->
-                    </div>
-                    <div class="text__about__me">
-                        <div class="subTitle__aboutMe">
-                            <h6>I'm Kimanje Patrick and I'm <span class="about_typing"></span></h6> <!-- Here is your name -->
-                        </div>
-                        <div class="paragraph__aboutMe"> <!-- Info about you -->
-                            <p>Hi! My name is <span>Kimanje Patrick</span>.
-                                Am a full-stack self taught software developer. I have 2+ years of professional software development experience.
-                                I have worked with 3 software development companies and have extensively used the following technologies.
-                                Nodejs/Express/MongoDb, Python/Django/Flask, React/Redux and many more as well as following the developer best practices.
-                            </p>
-                        </div>
-                        <div class="more_info_aboutMe">
-                            <ul>
-                                <li>
-                                    <label>Birthday:</label> 
-                                    <p>11.04.1996</p> <!-- Here is your birthday-->
-                                </li>
-                                <li>
-                                    <label>City:</label>
-                                    <p>Kampala - Uganda</p> <!-- Here is your city-->
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <label>Mail:</label>
-                                    <a href="#">dr.kimanjepatrick@gmail.com</a> <!-- Here is your email-->
-                                </li>
-                                <li>
-                                    <label>Phone:</label>
-                                    <a href="#">+256 750461002</a> <!-- Here is your Phone-->
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="link_social_aboutMe"><!-- Here is your social link. Just change href value to your link path. -->
-                            <a title="facebook" href="https://www.facebook.com/dr.kimpatrick" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a title="twitter" href="https://twitter.com/DKimpatrick" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a title="linkedin" href="https://www.linkedin.com/in/drkimpatrick/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a title="instagram" href="https://www.instagram.com/dr.kimpatrick/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a title="github" href="https://github.com/DrKimpatrick" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="btn__aboutMe">
-                            <a download href="resume.pdf"><span>Download CV</span></a>
-                            <a href="#contact"><span>Send Message</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="myStoryAboutMe">
-                    <div class="myStory">
-                        <h5>My Story</h5> <!-- Info about you -->
-                        <p>
-                            Hi! My name is Kimanje Patrick. Am a full-stack self taught software developer. I have 2+ years of professional software
-                            development experience. I have been developing in the following technologies.
-                            HTML, CSS, JavaScript(ES6+), Reactjs, Redux, bootstrap, 
-                            materialize, Python (Django and Flask), Node.js/Express, MongoDB, PostgreSQL and Typescript. I also exercise 
-                            unit testing and use continuous integration tools. Am a true team player with vast knowledge on how to work in teams. 
-                            Seeking the opportunity to provide outstanding, clean code in a collaborative environment. An excellent communicator 
-                            with the ability to meet deadlines and quickly resolve issues.
-
-                        </p>
-                    </div>
-                    <div class="mySkills" id="mySkills">
-                        <h5>My Skills</h5> <!-- Here is your skills-->
-                        <div class="skill-title">
-                            <label>HTML/CSS</label>
-                            <label data-num="95" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="95%">
-                            <div class="skill-bar one"></div>
-                        </div>
-
-                        <div class="skill-title">
-                            <label>Nodejs/Express/Mongodb</label>
-                            <label data-num="90" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="90%">
-                            <div class="skill-bar two"></div>
-                        </div>
-
-                        <div class="skill-title">
-                            <label>React/Redux</label>
-                            <label data-num="80" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="80%">
-                            <div class="skill-bar three"></div>
-                        </div>
-
-                        <div class="skill-title">
-                            <label>Python/Flask/Django</label>
-                            <label data-num="80" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="80%">
-                            <div class="skill-bar four"></div>
-                        </div>
-                        <div class="skill-title">
-                            <label>CI/CD</label>
-                            <label data-num="70" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="70%">
-                            <div class="skill-bar four"></div>
-                        </div>
-                        <div class="skill-title">
-                            <label>Docker</label>
-                            <label data-num="60" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="60%">
-                            <div class="skill-bar four"></div>
-                        </div>
-                        <div class="skill-title">
-                            <label>Bootstrap/Materialize</label>
-                            <label data-num="80" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="80%">
-                            <div class="skill-bar four"></div>
-                        </div>
-                        <div class="skill-title">
-                            <label>PostgreSQL/MySQL</label>
-                            <label data-num="80" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="80%">
-                            <div class="skill-bar four"></div>
-                        </div>
-                        <div class="skill-title">
-                            <label>Git</label>
-                            <label data-num="90" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="90%">
-                            <div class="skill-bar four"></div>
-                        </div>
-                        <div class="skill-title">
-                            <label>Cloud computing</label>
-                            <label data-num="10" class="skill-bar-percent">0</label>
-                            <label>%</label>
-                        </div>
-                        <div class="skillbar" data-percent="10%">
-                            <div class="skill-bar four"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text__about__me">
+              <div class="subTitle__aboutMe">
+                <h6>
+                  I'm Kimanje Patrick and I'm <span class="about_typing"></span>
+                </h6>
+                <!-- Here is your name -->
+              </div>
+              <div class="paragraph__aboutMe">
+                <!-- Info about you -->
+                <p>
+                  Hi! My name is <span>Kimanje Patrick</span>. Am a full-stack
+                  self taught software developer. I have 2+ years of
+                  professional software development experience. I have worked
+                  with 3 software development companies and have extensively
+                  used the following technologies. Nodejs/Express/MongoDb,
+                  Python/Django/Flask, React/Redux and many more as well as
+                  following the developer best practices.
+                </p>
+              </div>
+              <div class="more_info_aboutMe">
+                <ul>
+                  <li>
+                    <label>Birthday:</label>
+                    <p>11.04.1996</p>
+                    <!-- Here is your birthday-->
+                  </li>
+                  <li>
+                    <label>City:</label>
+                    <p>Kampala - Uganda</p>
+                    <!-- Here is your city-->
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <label>Mail:</label>
+                    <a href="#">dr.kimanjepatrick@gmail.com</a>
+                    <!-- Here is your email-->
+                  </li>
+                  <li>
+                    <label>Phone:</label>
+                    <a href="#">+256 750461002</a>
+                    <!-- Here is your Phone-->
+                  </li>
+                </ul>
+              </div>
+              <div class="link_social_aboutMe">
+                <!-- Here is your social link. Just change href value to your link path. -->
+                <a
+                  title="facebook"
+                  href="https://www.facebook.com/dr.kimpatrick"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  title="twitter"
+                  href="https://twitter.com/DKimpatrick"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  title="linkedin"
+                  href="https://www.linkedin.com/in/drkimpatrick/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  title="instagram"
+                  href="https://www.instagram.com/dr.kimpatrick/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  title="github"
+                  href="https://github.com/DrKimpatrick"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+              <div class="btn__aboutMe">
+                <a download href="resume-1.pdf"><span>Download CV</span></a>
+                <a href="#contact"><span>Send Message</span></a>
+              </div>
             </div>
-            <!-- /ABOUT -->
+          </div>
+          <div class="myStoryAboutMe">
+            <div class="myStory">
+              <h5>My Story</h5>
+              <!-- Info about you -->
+              <p>
+                Hi! My name is Kimanje Patrick. Am a full-stack self taught
+                software developer. I have 2+ years of professional software
+                development experience. I have been developing in the following
+                technologies. HTML, CSS, JavaScript(ES6+), Reactjs, Redux,
+                bootstrap, materialize, Python (Django and Flask),
+                Node.js/Express, MongoDB, PostgreSQL and Typescript. I also
+                exercise unit testing and use continuous integration tools. Am a
+                true team player with vast knowledge on how to work in teams.
+                Seeking the opportunity to provide outstanding, clean code in a
+                collaborative environment. An excellent communicator with the
+                ability to meet deadlines and quickly resolve issues.
+              </p>
+            </div>
+            <div class="mySkills" id="mySkills">
+              <h5>My Skills</h5>
+              <!-- Here is your skills-->
+              <div class="skill-title">
+                <label>HTML/CSS</label>
+                <label data-num="95" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="95%">
+                <div class="skill-bar one"></div>
+              </div>
 
-            <!-- SERVICES -->
-            <!-- <div class="services__content">
+              <div class="skill-title">
+                <label>Nodejs/Express/Mongodb</label>
+                <label data-num="90" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="90%">
+                <div class="skill-bar two"></div>
+              </div>
+
+              <div class="skill-title">
+                <label>React/Redux</label>
+                <label data-num="80" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="80%">
+                <div class="skill-bar three"></div>
+              </div>
+
+              <div class="skill-title">
+                <label>Python/Flask/Django</label>
+                <label data-num="80" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="80%">
+                <div class="skill-bar four"></div>
+              </div>
+              <div class="skill-title">
+                <label>CI/CD</label>
+                <label data-num="70" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="70%">
+                <div class="skill-bar four"></div>
+              </div>
+              <div class="skill-title">
+                <label>Docker</label>
+                <label data-num="60" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="60%">
+                <div class="skill-bar four"></div>
+              </div>
+              <div class="skill-title">
+                <label>Bootstrap/Materialize</label>
+                <label data-num="80" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="80%">
+                <div class="skill-bar four"></div>
+              </div>
+              <div class="skill-title">
+                <label>PostgreSQL/MySQL</label>
+                <label data-num="80" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="80%">
+                <div class="skill-bar four"></div>
+              </div>
+              <div class="skill-title">
+                <label>Git</label>
+                <label data-num="90" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="90%">
+                <div class="skill-bar four"></div>
+              </div>
+              <div class="skill-title">
+                <label>Cloud computing</label>
+                <label data-num="10" class="skill-bar-percent">0</label>
+                <label>%</label>
+              </div>
+              <div class="skillbar" data-percent="10%">
+                <div class="skill-bar four"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /ABOUT -->
+
+        <!-- SERVICES -->
+        <!-- <div class="services__content">
                 <div class="about__title" id="services">
                     <h3>Services</h3>
                     <span>What i do</span>
@@ -386,10 +497,10 @@
                     </div>
                 </div>
             </div> -->
-            <!-- /SERVICES -->
+        <!-- /SERVICES -->
 
-            <!-- COUNTERBOX -->
-            <div class="counter__content">
+        <!-- COUNTERBOX -->
+        <!-- <div class="counter__content">
                 <div class="counter" id="counter">
                     <div class="bl">
                         <div>
@@ -420,161 +531,274 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- /COUNTERBOX -->
+            </div> -->
+        <!-- /COUNTERBOX -->
 
-            <!-- PORTFOLIO -->
-            <div class="works__content">
-                <div class="about__title" id="portfolio">
-                    <h3>Portfolio</h3>
-                    <span>Work i have done</span>
-                </div>
-                <!-- <div class="work_nav"> -->
-                    <!-- <ul> -->
-                        <!-- <li class="active btn_work " data-filter="all">all</li> -->
-                        <!-- <li class="btn_work" data-filter="webDesign">Web design</li>
+        <!-- PORTFOLIO -->
+        <div class="works__content">
+          <div class="about__title" id="portfolio">
+            <h3>Portfolio</h3>
+            <span>Work i have done</span>
+          </div>
+          <!-- <div class="work_nav"> -->
+          <!-- <ul> -->
+          <!-- <li class="active btn_work " data-filter="all">all</li> -->
+          <!-- <li class="btn_work" data-filter="webDesign">Web design</li>
                         <li class="btn_work" data-filter="application">Application</li>
                         <li class="btn_work" data-filter="development">Development</li> -->
-                    <!-- </ul> -->
-                <!-- </div> -->
-                <div class="works__inner">
-                    <div class="work_item filter application">
-                        <div class="item_content">
-                            <img src="images/work/bg-2.jpg" alt="work">
-                            <div class="item-overlay"></div>
-                            <div class="item_title">
-                                <h6>Unclebob</h6>
-                                <a  href="images/work/bg-2.jpg"><i class="fas fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work_item filter webDesign">
-                        <div class="item_content">
-                            <img src="images/work/bg-1.jpg" alt="work">
-                            <div class="item-overlay"></div>
-                            <div class="item_title">
-                                <h6>Easy Dial</h6>
-                                <a href="images/work/bg-1.jpg"><i class="fas fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work_item filter development">
-                        <div class="item_content">
-                            <img src="images/work/bg-3.jpg" alt="work">
-                            <div class="item-overlay"></div>
-                            <div class="item_title">
-                                <h6>Authors haven</h6>
-                                <a href="images/work/bg-3.jpg"><i class="fas fa-search"></i></a>
-                            </div>
-                            </div>
-                    </div>
+          <!-- </ul> -->
+          <!-- </div> -->
+          <div class="works__inner">
+            <div class="work_item filter application">
+              <div class="item_content">
+                <img src="images/work/bg-2.jpg" alt="work" />
+                <div class="item-overlay"></div>
+                <div class="item_title">
+                  <h6>Unclebob</h6>
+                  <!-- <p>Application that connects clients to service providers</p> -->
+                  <!-- <a href="images/work/bg-2.jpg"
+                    ><i class="fas fa-search"></i
+                  ></a> -->
                 </div>
+              </div>
             </div>
-            <!-- /PORTFOLIO -->
+            <div class="work_item filter webDesign">
+              <div class="item_content">
+                <img src="images/work/bg-2.jpg" alt="work" />
+                <div class="item-overlay"></div>
+                <div class="item_title">
+                  <h6>Easy Dial</h6>
+                  <!-- <a href="images/work/bg-1.jpg"
+                    ><i class="fas fa-search"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+            <div class="work_item filter development">
+              <div class="item_content">
+                <img src="images/work/bg-2.jpg" alt="work" />
+                <div class="item-overlay"></div>
+                <div class="item_title">
+                  <h6>Authors haven</h6>
+                  <!-- <a href="images/work/bg-3.jpg"
+                    ><i class="fas fa-search"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+            <div class="work_item filter development">
+              <div class="item_content">
+                <img src="images/work/bg-2.jpg" alt="work" />
+                <div class="item-overlay"></div>
+                <div class="item_title">
+                  <h6>Carpool</h6>
+                  <!-- <a href="images/work/bg-3.jpg"
+                    ><i class="fas fa-search"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+            <div class="work_item filter development">
+              <div class="item_content">
+                <img src="images/work/bg-2.jpg" alt="work" />
+                <div class="item-overlay"></div>
+                <div class="item_title">
+                  <h6>Banka</h6>
+                  <!-- <a href="images/work/bg-3.jpg"
+                    ><i class="fas fa-search"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+            <div class="work_item filter development">
+              <div class="item_content">
+                <img src="images/work/bg-2.jpg" alt="work" />
+                <div class="item-overlay"></div>
+                <div class="item_title">
+                  <h6>Udagram</h6>
+                  <!-- <a href="images/work/bg-3.jpg"
+                    ><i class="fas fa-search"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /PORTFOLIO -->
 
-            <!-- REVIEWS -->
-            <div class="feedback_content">
-                <div class="feedback_container" id='testimonial'>
-                    <div class="owl-carousel owl-theme" id="owl-carousel">
-                        <div>
-                            <figure>
-                                <img src="https://lh3.googleusercontent.com/JUjzH3zd5GiExe5edjQN_V6HgvXxXAu5GJxEeASeHO_c3_PCFBZtZXcZh1mJ6VKNTtyDlrNi9QMIQ4BN04WfqTeIN5v4LB4ASKRU8pWFQIlLNqyLhnASA7aLjKhjEjigWPrLBjdRPA=w2400" alt="user">
-                                <div class="name">Andrew Ssekirime</div>
-                                <div class="comment">
-                                    Keep up the good work Kimanje Patrick. I really appreciate your incredible skills and your open minded approach to acquiring new skills. Please keep inspiring young people because we need many Patricks to transform the world.
-                                    <br/>
-                                    Co-founder <a href="http://www.araknerd.com/" target="_blank">ARAKNERD</a>
-                                </div>
-                            </figure>
-                        </div>
-                        <div>
-                            <figure>
-                                <img src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400" alt="user">
-                                <div class="name">Shyaka</div>
-                                <div class="comment">Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe asperiores nisi facere ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum autem? Veritatis fuga quasi sunt tenetur. Expedita id eaque incidunt beatae nesciunt! In similique exercitationem tempore excepturi placeat Nostrum ducimus dicta temporibus quas!</div> 
-                            </figure>
-                        </div>
-                        <!-- <div>
+        <!-- REVIEWS -->
+        <div class="feedback_content">
+          <div class="feedback_container" id="testimonial">
+            <div class="owl-carousel owl-theme" id="owl-carousel">
+              <div>
+                <figure>
+                  <img
+                    src="https://lh3.googleusercontent.com/JUjzH3zd5GiExe5edjQN_V6HgvXxXAu5GJxEeASeHO_c3_PCFBZtZXcZh1mJ6VKNTtyDlrNi9QMIQ4BN04WfqTeIN5v4LB4ASKRU8pWFQIlLNqyLhnASA7aLjKhjEjigWPrLBjdRPA=w2400"
+                    alt="user"
+                  />
+                  <div class="name">Andrew Ssekirime</div>
+                  <div class="comment">
+                    Keep up the good work Kimanje Patrick. I really appreciate
+                    your incredible skills and your open minded approach to
+                    acquiring new skills. Please keep inspiring young people
+                    because we need many Patricks to transform the world.
+                    <br />
+                    Co-founder
+                    <a href="http://www.araknerd.com/" target="_blank"
+                      >ARAKNERD</a
+                    >
+                  </div>
+                </figure>
+              </div>
+              <!-- <div>
+                <figure>
+                  <img
+                    src="https://lh3.googleusercontent.com/17l4U4BnCFgjm_bXIrYnBNRl8RbDWTEmb5pxiHaZPfkwycsYmAsAXsfveqUQob9H_J-qvNWxGUE_VJ3C-fL0lI26qBaOIQeLDAOewpE0yjUdd-td7Pit39hqJx4oGaOOk8x7lBI21Q=w2400"
+                    alt="user"
+                  />
+                  <div class="name">Shyaka</div>
+                  <div class="comment">
+                    Dolor facilis veritatis doloremque dicta eos Voluptate earum
+                    nulla ad et esse Saepe asperiores nisi facere ipsam
+                    corporis. Dolorem praesentium tenetur tempore dolorem illum
+                    autem? Veritatis fuga quasi sunt tenetur. Expedita id eaque
+                    incidunt beatae nesciunt! In similique exercitationem
+                    tempore excepturi placeat Nostrum ducimus dicta temporibus
+                    quas!
+                  </div>
+                </figure>
+              </div> -->
+              <!-- <div>
                             <figure>
                                 <img src="https://lh3.googleusercontent.com/qiStnAzdKRwOi-2K7gjVvq4m9ghfZdMFB1ju21KVticctq0vjW_lV44LtP1aegLTUtU38IlXN_Ht9uV01xAnA6cxVTw5UUTrmC_tKg0Ik3qN6NAyBeaCiVrh2KIerqFpDzTVtZFV2g=w2400" alt="user">
                                 <div class="name">Francis</div>
                                 <div class="comment">Dolor facilis veritatis doloremque dicta eos Voluptate earum nulla ad et esse Saepe asperiores nisi facere ipsam corporis. Dolorem praesentium tenetur tempore dolorem illum autem? Veritatis fuga quasi sunt tenetur. Expedita id eaque incidunt beatae nesciunt! In similique exercitationem tempore excepturi placeat Nostrum ducimus dicta temporibus quas!</div>
                             </figure>
                         </div> -->
-                    </div>
-                </div>
             </div>
-            <!-- /REVIEWS -->
+          </div>
+        </div>
+        <!-- /REVIEWS -->
 
-            <!-- CONTACT -->
-            <div class="contact_content">
-                <div class="about__title" id="contact">
-                    <h3>Contact</h3>
-                    <span>Get in touch</span>
-                </div>
-                <div class="contact-title">
-                    <span>Leave a message</span>
-                </div>
-                <div class="contact__conte">
-                    <div class="info-contact">
-                        <p>Kampala - Uganda</p> <!-- Here is your city-->
-                        <a href="#">dr.kimanjepatrick@gmail.com</a> <!-- Here is your email-->
-                        <a href="#">+256 750461002</a> <!-- Here is your phone-->
-                        <div class="contact-social"><!-- Here is your social link. Just change href value to your link path. -->
-                            <a title="facebook" href="https://www.facebook.com/dr.kimpatrick" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a title="twitter" href="https://twitter.com/DKimpatrick" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a title="linkedin" href="https://www.linkedin.com/in/drkimpatrick/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a title="instagram" href="https://www.instagram.com/dr.kimpatrick/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a title="github" href="https://github.com/DrKimpatrick" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form class="gform">
-                            <!-- Hidden Required Fields -->
-                            <input type="hidden" name="subject" value="Portfolio Visitor"> <!--Here is your site name-->
-                            <input type="hidden" name="toEmail" value="dr.kimanjepatrick@gmail.com"> <!--Here is your email-->
-                            <!-- /Hidden Required Fields -->
-                            <div class="form-name">
-                                <input type="text" id="name" name="name" placeholder="Enter your name">
-                            </div>
-                            <div class="form-email">
-                                <input type="email" id="fromEmail" name="fromEmail" placeholder="Enter your email">
-                            </div>
-                            <div class="form-textarea">
-                                <textarea name="body" id="body" placeholder="How can I help you?"></textarea>
-                            </div>
-                            <div class="btn__send">
-                                <button type="submit" id="btn_submit"><span>Send</span></button>
-                            </div>
-                        </form>
-                        <div id="winError"></div>
-                    </div>
-                </div>
+        <!-- CONTACT -->
+        <div class="contact_content">
+          <div class="about__title" id="contact">
+            <h3>Contact</h3>
+            <span>Get in touch</span>
+          </div>
+          <div class="contact-title">
+            <span>Leave a message</span>
+          </div>
+          <div class="contact__conte">
+            <div class="info-contact">
+              <p>Kampala - Uganda</p>
+              <!-- Here is your city-->
+              <a href="#">dr.kimanjepatrick@gmail.com</a>
+              <!-- Here is your email-->
+              <a href="#">+256 750461002</a>
+              <!-- Here is your phone-->
+              <div class="contact-social">
+                <!-- Here is your social link. Just change href value to your link path. -->
+                <a
+                  title="facebook"
+                  href="https://www.facebook.com/dr.kimpatrick"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  title="twitter"
+                  href="https://twitter.com/DKimpatrick"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  title="linkedin"
+                  href="https://www.linkedin.com/in/drkimpatrick/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  title="instagram"
+                  href="https://www.instagram.com/dr.kimpatrick/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  title="github"
+                  href="https://github.com/DrKimpatrick"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
             </div>
-            <!-- /CONTACT -->
-
-            <!-- FOOTER -->
-            <div class="footer">
-                <p>&copy; 2019 All Rights Reserved</p>
+            <div class="contact-form">
+              <form class="gform" id="gform">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="subject" value="Portfolio Visitor" />
+                <!--Here is your site name-->
+                <input
+                  type="hidden"
+                  name="toEmail"
+                  value="dr.kimanjepatrick@gmail.com"
+                />
+                <!--Here is your email-->
+                <!-- /Hidden Required Fields -->
+                <div class="form-name">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-email">
+                  <input
+                    type="email"
+                    id="fromEmail"
+                    name="fromEmail"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-textarea">
+                  <textarea
+                    name="body"
+                    id="body"
+                    placeholder="How can I help you?"
+                    required
+                  ></textarea>
+                </div>
+                <div class="btn__send">
+                  <button type="submit" id="btn_submit">
+                    <span>Send</span>
+                  </button>
+                </div>
+              </form>
+              <div id="winError"></div>
             </div>
-            <!-- /FOOTER -->
+          </div>
+        </div>
+        <!-- /CONTACT -->
 
-        </section>
+        <!-- FOOTER -->
+        <div class="footer">
+          <p>&copy; 2019 All Rights Reserved</p>
+        </div>
+        <!-- /FOOTER -->
+      </section>
     </div>
     <!-- /RIGHTPART -->
     <!-- /CONTENT -->
-    
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/typing.js"></script>
-    <script src="js/OwlCarousel.min.js"></script>   
+    <script src="js/OwlCarousel.min.js"></script>
     <script src="js/preloader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 
-<!-- Mirrored from hibix.template.advanceup.com.ua/Demo/Dark/04_Dark_Parallax/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Oct 2019 16:06:17 GMT -->
+  <!-- Mirrored from hibix.template.advanceup.com.ua/Demo/Dark/04_Dark_Parallax/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Oct 2019 16:06:17 GMT -->
 </html>
