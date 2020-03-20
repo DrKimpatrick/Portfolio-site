@@ -1045,6 +1045,23 @@ h6 {
   position: relative;
 }
 
+.project-name {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 55px;
+  padding-top: 22px;
+  border-bottom: 2px solid #fd7878;
+  /* opacity: 0.9; */
+}
+
+.project-name h2 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .item-overlay::before {
   position: absolute;
   display: block;
@@ -1089,21 +1106,24 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   height: 300px;
   display: flex;
-  justify-content: center;
+  /* background-color: red; */
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
+  padding-top: 80px;
 }
 
 .item_title h6 {
-  font-size: 16px;
+  font-size: 13px;
   color: #000;
-  font-weight: 500;
+  font-weight: 100;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
   transform: translateY(-20px);
   opacity: 0;
   transition: all 0.8s;
