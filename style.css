@@ -18,6 +18,17 @@
 15-Style For Jquery Animation
 16-Media
 */
+.project-description {
+  /* background-color: aliceblue; */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.project-description h6{
+  color: black;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 20px;
+}
 
 * {
   box-sizing: border-box;
